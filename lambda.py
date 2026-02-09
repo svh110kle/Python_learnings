@@ -8,3 +8,11 @@ double= lambda x: x*2
 print(double(5))
 triple= lambda x: x*3
 print(triple(5))
+
+# function pass in a lambda function
+
+def appl(fx,value):
+    return 78+fx(value)+fx(value)
+
+print(appl(double,5))
+print(appl(triple,5))
